@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -9,7 +8,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
     color: #eee;
-    line-height: 1.6;
 }
 
 header{
@@ -18,12 +16,13 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-bottom: 10px;
+    padding: 2rem;
     background-color: rgba(0, 0, 0, 0.9);
     border-bottom: #222;
 }
 
 main{
+    display: flex;
     max-width: 700px;
     padding: 4rem;
     margin: 6rem 0;
@@ -32,10 +31,22 @@ main{
     border: 1px solid #222;
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid#222;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.3rem;
+    font-style: normal;
+}
 
 header h1{
-    font-size: 50px;
-    padding: 20px;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
     font-style: italic;
 }
 
@@ -58,13 +69,12 @@ header h1{
     font-weight: bold; 
     border-bottom: 1px solid orangered;
 }
-
  #content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: calc(100vh - 198px - 48px); 
+    height: 100vh;
 }
 
 /*Home Page*/
@@ -86,14 +96,14 @@ header h1{
 }
 
 .chef-img{
-    width: 100%;
+    width: 90%;
     border-radius: 50%;
 }
 
 .home-text.one,
 .home-text.two,
 .chef-img{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 /*Menu*/
@@ -102,7 +112,6 @@ header h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
-    animation: fadeIn 1.5s;
 }
 
 .menu-item{
@@ -170,35 +179,26 @@ header h1{
 
 .fa-github:hover {
     transform: rotate(360deg) scale(1.2);
-  }
-
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    padding: 10px;
-    border-top: 1px solid#222;
-    background-color: rgba(0, 0, 0, 0.6);
-    font-size: 18px;
-    font-style: normal;
 }
 
 
+/*Media Queries*/
 @media only screen and (max-width: 600px) {
+
     header h1{
         font-size: 2.5rem;
+        margin-bottom: 2rem;
     }
 
     .nav p{
         font-size: 1.8rem;
     }
 
-    main{
+    .main{
+        width: 80%;
+        height: 80%;
+        margin: 20px;
+        padding: 0;
         text-align: center;
     }
 
@@ -216,4 +216,14 @@ footer{
     .contact p{
         font-size:2rem;
     }
+
+    .main{
+        width: 80%;
+        height: 80%;
+    }
 }
+
+
+
+
+
