@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact(){\r\n    console.log(\"This is the contact page\");\r\n}\n\n//# sourceURL=webpack://js-restaurant-landing-page/./src/modules/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\n/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! .. */ \"./src/index.js\");\n\r\n\r\nfunction contact (){\r\nconst main = document.querySelector('.main');\r\nmain.replaceChildren();\r\n\r\nconst contactDiv = (0,___WEBPACK_IMPORTED_MODULE_0__.createEl)('div', 'tabcontent contact', '', '');\r\nmain.append(contactDiv);\r\n\r\nconst p1 = (0,___WEBPACK_IMPORTED_MODULE_0__.createEl)('p', '', '', '📞 +233 123 456 891');\r\nconst p2 = (0,___WEBPACK_IMPORTED_MODULE_0__.createEl)('p', '', '', '🏠 7 Containers Bluekiosk, East Legon Hills, Ghana');\r\nconst mapImg = (0,___WEBPACK_IMPORTED_MODULE_0__.createEl)('img', '', '../dist/img/map.png', '');\r\nmapImg.alt = \"location\";\r\n\r\ncontactDiv.appendChild(p1);\r\np1.insertAdjacentElement('afterend', p2);\r\np2.insertAdjacentElement(\"afterend\", mapImg);\r\n}\n\n//# sourceURL=webpack://js-restaurant-landing-page/./src/modules/contact.js?");
 
 /***/ }),
 
