@@ -12,3 +12,14 @@ export function createEl(el, className, src, text){
     element.textContent = text;
     return element;
 }
+
+let tabSwitch = (function(){
+    const homeTab = document.querySelector('.home-tab');
+    homeTab.addEventListener('click', homePage);
+
+    const menuTab = document.querySelector('.menu-tab');
+    menuTab.addEventListener('click', menu);
+
+    const contactTab = document.querySelector('.contact-tab');
+    contactTab.addEventListener('click',contact);
+})();
