@@ -22,12 +22,14 @@ header{
 }
 
 main{
+    width: 100%;
     display: flex;
+    align-items: center;
     max-width: 700px;
     padding: 4rem;
     margin: 6rem 0;
     font-size: 2rem;
-    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(0,0,0,0.5);
     border: 1px solid #222;
 }
 
@@ -36,8 +38,8 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    width: 100%;
-    padding: 1rem;
+    width: 100vw;
+    padding: 1.4rem;
     border-top: 1px solid#222;
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 1.3rem;
@@ -196,7 +198,6 @@ header h1{
 
     .main{
         width: 80%;
-        height: 80%;
         margin: 20px;
         padding: 0;
         text-align: center;
@@ -204,22 +205,27 @@ header h1{
 
     .menu{
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
 
     .contact p{
         font-size: 1.5rem;
     }
+
+    .chef-img{
+        width: 70%;
+    }
+
+    .menu-item{
+        width: 70%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .contact p{
         font-size:2rem;
-    }
-
-    .main{
-        width: 80%;
-        height: 80%;
     }
 }
 
